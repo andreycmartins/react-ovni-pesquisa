@@ -1,3 +1,3 @@
-export function Ovnipesquisa() {
-  return <h1>Ovnipesquisa</h1>
+export function Index() {
+  return <h1>Index</h1>
 }

@@ -1,3 +1,3 @@
-export function Contatos() {
-  return <h1>Contatos</h1>
+export function Contato() {
+  return <h1>Contato</h1>
 }
