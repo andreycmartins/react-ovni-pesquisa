@@ -5,10 +5,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
-html, body, #root{
-    height: 100;
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 300vw;
 }
 
 button {
@@ -20,6 +22,10 @@ button {
 a{
     text-decoration: none;
     outline: none;
+    &:visited{
+        color: inherit;
+        text-decoration: none;
+    }
 }
 `
 

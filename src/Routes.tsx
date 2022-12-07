@@ -11,7 +11,7 @@ export function AppRoutes() {
   return (
     <Router>
       <Routes>
-        {["home", "index", "", "main"].map((path) => (
+        {[ "", "home", "index", "main"].map((path) => (
           <Route path={path} element={<Index />} />
         ))}
         <Route path="expediente" element={<Expediente />} />

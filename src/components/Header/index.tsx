@@ -10,7 +10,7 @@ export default function Header() {
         <nav className="navbar">
           <ul className="navlist">
             <li className="nav-item">
-              <a href="/" className="nav-link-item">
+              <a href="/" className="nav-link-item ovni-pesquisa-button">
                 OVNI PESQUISA
               </a>
             </li>
