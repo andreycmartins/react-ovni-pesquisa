@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { Artigos } from "./pages/Artigos"
-import { Consultores } from "./pages/Consultores"
-import { Contatos } from "./pages/Contato"
-import { Edicoes } from "./pages/Edicoes"
-import { Expediente } from "./pages/Expediente"
-import { More } from "./pages/More"
-import { Ovnipesquisa } from "./pages/Ovnipesquisa"
+import { Artigos } from "./pages/artigos"
+import { Consultores } from "./pages/consultores"
+import { Contatos } from "./pages/contato"
+import { Edicoes } from "./pages/edicoes"
+import { Expediente } from "./pages/expediente"
+import { More } from "./pages/more"
+import { Ovnipesquisa } from "./pages"
 
 
 export function AppRoutes() {
