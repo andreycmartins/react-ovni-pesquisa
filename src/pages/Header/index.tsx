@@ -1,13 +1,30 @@
 export default function Header() {
+  const header = {
+    display: "flex",
+    justifyContent: "center",
+  }
+  const navlist = {
+    display: "flex",
+    gap: "2em",
+    listStyle: "none",
+  }
+  const title = {
+    textAlign: "center",
+  }
+  const navItem = {
+    padding: "8px 16px",
+    backgroundColor: "red"
+  }
+
   return (
     <div>
-      <header className="header">
+      <header className="header" style={header}>
         <nav className="navbar">
-          <h1 className="title">
+          <h1 className="title" style={title}>
             <strong>OVNI</strong> PESQUISA
           </h1>
-          <ul className="navlist">
-            <li className="nav-item">
+          <ul className="navlist" style={navlist}>
+            <li className="nav-item" style={navItem}>
               <a href="" className="nav-link-item">
                 OVNI PESQUISA
               </a>
