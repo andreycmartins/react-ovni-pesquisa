@@ -1,8 +1,15 @@
+import { useState } from "react"
+import Header from "./components/Header"
 import { AppRoutes } from "./Routes"
 
 function App() {
+  const [menuIsVisible, setMenuIsVisible] = useState(true)
+
   return (
-  <AppRoutes />
+    <>
+      <Header menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
+      <AppRoutes />
+    </>
   )
 }
 

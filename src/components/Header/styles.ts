@@ -10,12 +10,12 @@ export const HeaderContainer = styled.header`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30vh;
+  height: 20vh;
   color: white;
   .title {
     margin: 16px;
   }
-  ul {
+  .navlist {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -32,6 +32,19 @@ export const HeaderContainer = styled.header`
     transition: all ease 0.2s;
     &:hover {
       transform: translateY(-3px);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .navlist{
+      flex-direction: column;
     }
   }
 `
