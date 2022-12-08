@@ -19,7 +19,7 @@ export const HeaderContainer = styled.header`
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 2vw;
+    gap: 0.5vw;
   }
   .nav-link-item {
     padding: 8px 16px;
