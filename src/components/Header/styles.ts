@@ -15,6 +15,9 @@ export const HeaderContainer = styled.header`
   .title {
     margin: 16px;
   }
+  .close-button {
+    display: none;
+  }
   .navlist {
     display: flex;
     flex-direction: row;
@@ -23,7 +26,7 @@ export const HeaderContainer = styled.header`
   }
   .nav-link-item {
     padding: 8px 16px;
-    background-color: #476930;
+    background-color: #204f00;
     color: white;
     border-radius: 16px;
     display: inline-block;
@@ -36,15 +39,32 @@ export const HeaderContainer = styled.header`
   }
 
   @media screen and (max-width: 768px) {
-    position: absolute;
+
+    
+
+    /* position: absolute;
     width: 100%;
     height: 100%;
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
-    .navlist{
-      flex-direction: column;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 40%, rgba(12, 43, 0, 1) 100%);
+    backdrop-filter: blur(3px);
+    .close-button {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      transform: scale(2);
     }
+    .title {
+      display: none;
+    }
+    .navlist {
+      flex-direction: column;
+      gap: 16px;
+    } */
   }
 `

@@ -1,11 +1,14 @@
 import { HeaderContainer } from "./styles"
 import { IoClose } from "react-icons/io5"
 
-export default function Header(menuIsVisible, setMenuIsVisible) {
+export default function Header() {
+
+  
+
   return (
     <div>
       <HeaderContainer>
-        <IoClose size={45} />
+        <IoClose className="close-button" />
         <h1 className="title">
           <strong>OVNI</strong> PESQUISA
         </h1>
