@@ -1,14 +1,13 @@
 import { HeaderContainer } from "./styles"
 import { IoClose } from "react-icons/io5"
+import { GiHamburgerMenu } from "react-icons/gi"
 
 export default function Header() {
-
-  
-
   return (
     <div>
       <HeaderContainer>
         <IoClose className="close-button" />
+        <GiHamburgerMenu className="hamburguer" />
         <h1 className="title">
           <strong>OVNI</strong> PESQUISA
         </h1>

@@ -37,12 +37,23 @@ export const HeaderContainer = styled.header`
       transform: translateY(-3px);
     }
   }
-
+  .hamburguer {
+    display: none;
+  }
   @media screen and (max-width: 768px) {
-
-    
-
-    /* position: absolute;
+    height: 10vh;
+    text-align: center;
+    flex-direction: row;
+    .navlist {
+      display: none;
+    }
+    .hamburguer {
+      display: block;
+      scale: 2.5;
+    }
+  }
+  /* .navbar-mobile {
+    position: absolute;
     width: 100%;
     height: 100%;
     z-index: 10;
@@ -65,6 +76,6 @@ export const HeaderContainer = styled.header`
     .navlist {
       flex-direction: column;
       gap: 16px;
-    } */
-  }
+    }
+  } */
 `
