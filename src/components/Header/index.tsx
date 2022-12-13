@@ -1,17 +1,24 @@
 import { HeaderContainer } from "./styles"
 import { IoClose } from "react-icons/io5"
 import { GiHamburgerMenu } from "react-icons/gi"
+import { useState } from "react"
 
 export default function Header() {
+  const [active, setMode] = useState(false)
+  const ToggleMode = () => {
+    setMode(!active)
+  }
   return (
     <div>
       <HeaderContainer>
         <IoClose className="close-button" />
-        <GiHamburgerMenu className="hamburguer" />
+        <div className={active ? "icon iconActive" : "icon"} onClick={ToggleMode}>
+          <GiHamburgerMenu className="hamburguer" size={45} />
+        </div>
         <h1 className="title">
           <strong>OVNI</strong> PESQUISA
         </h1>
-        <nav className="navbar">
+        <nav className={active ? "menu menuOpen" : "menu menuClose"}>
           <ul className="navlist">
             <li className="nav-item">
               <a href="/" className="nav-link-item ovni-pesquisa-button">

@@ -49,7 +49,6 @@ export const HeaderContainer = styled.header`
     }
     .hamburguer {
       display: block;
-      scale: 2.5;
     }
   }
   /* .navbar-mobile {
